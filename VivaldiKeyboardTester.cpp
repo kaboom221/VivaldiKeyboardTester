@@ -594,24 +594,24 @@ VivaldiTester::VivaldiTester() {
     remapCfgs->cfg[33].remappedKey.MakeCode = VIVALDI_KBD_BKLIGHT_UP;
     remapCfgs->cfg[33].remappedKey.Flags = KEY_E0;
 
-    //Ctrl + Left -> Home
+    //Right Ctrl + Left -> Home
 
-    remapCfgs->cfg[34].LeftCtrl = RemapCfgKeyStateEnforce;
+    remapCfgs->cfg[34].RightCtrl = RemapCfgKeyStateEnforce;
     remapCfgs->cfg[34].originalKey.MakeCode = K_LEFT;
     remapCfgs->cfg[34].originalKey.Flags = KEY_E0;
     remapCfgs->cfg[34].remappedKey.MakeCode = K_HOME;
     remapCfgs->cfg[34].remappedKey.Flags = KEY_E0;
-    remapCfgs->cfg[34].additionalKeys[0].MakeCode = K_LCTRL;
+    remapCfgs->cfg[34].additionalKeys[0].MakeCode = K_RCTRL;
     remapCfgs->cfg[34].additionalKeys[0].Flags = KEY_BREAK;
 
-    //Ctrl + Right -> End
+    //Right Ctrl + Right -> End
 
-    remapCfgs->cfg[35].LeftCtrl = RemapCfgKeyStateEnforce;
+    remapCfgs->cfg[35].RightCtrl = RemapCfgKeyStateEnforce;
     remapCfgs->cfg[35].originalKey.MakeCode = K_RIGHT;
     remapCfgs->cfg[35].originalKey.Flags = KEY_E0;
     remapCfgs->cfg[35].remappedKey.MakeCode = K_END;
     remapCfgs->cfg[35].remappedKey.Flags = KEY_E0;
-    remapCfgs->cfg[35].additionalKeys[0].MakeCode = K_LCTRL;
+    remapCfgs->cfg[35].additionalKeys[0].MakeCode = K_RCTRL;
     remapCfgs->cfg[35].additionalKeys[0].Flags = KEY_BREAK;
 
     //Ctrl + Up -> Page Up
