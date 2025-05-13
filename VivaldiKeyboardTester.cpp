@@ -443,16 +443,13 @@ VivaldiTester::VivaldiTester() {
     remapCfgs->cfg[19].remappedKey.MakeCode = K_DELETE;
     remapCfgs->cfg[19].remappedKey.Flags = KEY_E0;
 
-    //Map Ctrl + Backspace -> Delete
+    //Map Lock -> Delete
 
-    remapCfgs->cfg[20].LeftCtrl = RemapCfgKeyStateEnforce;
     remapCfgs->cfg[20].LeftAlt = RemapCfgKeyStateEnforceNot;
-    remapCfgs->cfg[20].originalKey.MakeCode = K_BACKSP;
+    remapCfgs->cfg[20].originalKey.MakeCode = K_LOCK;
     remapCfgs->cfg[20].originalKey.Flags = 0;
     remapCfgs->cfg[20].remappedKey.MakeCode = K_DELETE;
     remapCfgs->cfg[20].remappedKey.Flags = KEY_E0;
-    remapCfgs->cfg[20].additionalKeys[0].MakeCode = K_LCTRL;
-    remapCfgs->cfg[20].additionalKeys[0].Flags = KEY_BREAK;
 
     //Map Ctrl + Fullscreen -> F11
 
@@ -614,24 +611,24 @@ VivaldiTester::VivaldiTester() {
     remapCfgs->cfg[35].additionalKeys[0].MakeCode = K_RCTRL;
     remapCfgs->cfg[35].additionalKeys[0].Flags = KEY_BREAK;
 
-    //Ctrl + Up -> Page Up
+    //Right Ctrl + Up -> Page Up
 
-    remapCfgs->cfg[36].LeftCtrl = RemapCfgKeyStateEnforce;
+    remapCfgs->cfg[36].RightCtrl = RemapCfgKeyStateEnforce;
     remapCfgs->cfg[36].originalKey.MakeCode = K_UP;
     remapCfgs->cfg[36].originalKey.Flags = KEY_E0;
     remapCfgs->cfg[36].remappedKey.MakeCode = K_PGUP;
     remapCfgs->cfg[36].remappedKey.Flags = KEY_E0;
-    remapCfgs->cfg[36].additionalKeys[0].MakeCode = K_LCTRL;
+    remapCfgs->cfg[36].additionalKeys[0].MakeCode = K_RCTRL;
     remapCfgs->cfg[36].additionalKeys[0].Flags = KEY_BREAK;
 
-    //Ctrl + Down -> Page Down
+    //Right Ctrl + Down -> Page Down
 
-    remapCfgs->cfg[37].LeftCtrl = RemapCfgKeyStateEnforce;
+    remapCfgs->cfg[37].RightCtrl = RemapCfgKeyStateEnforce;
     remapCfgs->cfg[37].originalKey.MakeCode = K_DOWN;
     remapCfgs->cfg[37].originalKey.Flags = KEY_E0;
     remapCfgs->cfg[37].remappedKey.MakeCode = K_PGDN;
     remapCfgs->cfg[37].remappedKey.Flags = KEY_E0;
-    remapCfgs->cfg[37].additionalKeys[0].MakeCode = K_LCTRL;
+    remapCfgs->cfg[37].additionalKeys[0].MakeCode = K_RCTRL;
     remapCfgs->cfg[37].additionalKeys[0].Flags = KEY_BREAK;
 
     //Lock -> Windows + L
